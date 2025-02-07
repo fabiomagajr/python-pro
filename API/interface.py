@@ -32,7 +32,7 @@ def atualizar_logs():
 def verificar_conexao():
     while True:
         try:
-            response = requests.get("http://127.0.0.1:5000/api/v1/")
+            response = requests.get("http://127.0.0.1:5000/")
             if response.status_code == 200:
                 status_label.config(text="Connection OK", fg="green")
             else:
